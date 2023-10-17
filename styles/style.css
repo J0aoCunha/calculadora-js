@@ -74,33 +74,6 @@ body {
     gap: 0.75rem;
 }
 
-.operators img {
-    display: flex;
-    width: 4rem;
-    height: 4rem;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
-
-    box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26), 0px 4px 6px 0px rgba(0, 0, 0, 0.10), 0px 7px 7px 0px rgba(0, 0, 0, 0.04), 0px 11px 7px 0px rgba(0, 0, 0, 0.01);
-    padding: 1.125rem;
-    border-radius: 62.4375rem;
-    border: none;
-}
-
-.operators:last-child img {
-    background: linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);
-}
-
-
-.operators img:hover {
-    background-color: #56338f;
-}
-
-.operators:last-child img:hover {
-    background: linear-gradient(180deg, #807ECE 0%, #a492ee 100%);
-}
-
 #buttons-container button {
     display: flex;
     width: 4rem;
@@ -114,16 +87,37 @@ body {
 
     border-radius: 62.4375rem;
     border: none;
+
+    color: #EBEBEB;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
+    box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.10) inset, 0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26), 0px 4px 6px 0px rgba(0, 0, 0, 0.10), 0px 7px 7px 0px rgba(0, 0, 0, 0.04), 0px 11px 7px 0px rgba(0, 0, 0, 0.01);
+    padding: 1.125rem;
+
+    cursor: pointer;
+
+}
+
+#buttons-container button:hover {
+    background-color: #56338f;
+}
+
+
+#buttons-container button:first-child {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+    box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26), 0px 4px 6px 0px rgba(0, 0, 0, 0.10), 0px 7px 7px 0px rgba(0, 0, 0, 0.04), 0px 11px 7px 0px rgba(0, 0, 0, 0.01);
+    color: #975DFA;
+}
+
+#buttons-container button:first-child:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #393546;
+}
+
+#buttons-container .number {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
     box-shadow: 0px 2px 3px 0px rgba(255, 255, 255, 0.06) inset, 0px 0px 2px 0px rgba(0, 0, 0, 0.29), 0px 2px 4px 0px rgba(0, 0, 0, 0.26), 0px 4px 6px 0px rgba(0, 0, 0, 0.10), 0px 7px 7px 0px rgba(0, 0, 0, 0.04), 0px 11px 7px 0px rgba(0, 0, 0, 0.01);
     color: #EBEBEB
 }
 
-#buttons-container button:first-child {
-    color: #975DFA;
-}
-
-
-#buttons-container button:hover {
-    background-color: #3a3647;
+#buttons-container button:hover.number {
+    background-color: #393546;
 }
