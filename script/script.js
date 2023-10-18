@@ -6,19 +6,31 @@ console.log(buttons);
 
 class calculator {
 
-    constructor(previosOperation, currentOpretion) {
+    constructor(previosOperation, currentOpretionText) {
         this.previosOperation = previosOperation;
-        this.currentOpretion = currentOpretion;
+        this.currentOpretionText = currentOpretionText;
+        this.previosOperation = "";
     }
 
+    addDigits(digit) {
 
+        if (digit === "." && this.currentOpretion.includes(".")) return;
+
+        this.currentOpretion = digit;
+        this.updateScreen();
+    }
 }
+
+const calc = new calculator(previosOperation, currentOpretion);
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         const value = e.target.innerText;
 
-        console.log(value);
-
+        if (+value >= 0 || value === ".") {
+            calc.addDigits(value);
+        } else {
+            console.log("op =" + value);
+        }
     });
 })
