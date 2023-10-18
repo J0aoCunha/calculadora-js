@@ -20,6 +20,15 @@ class calculator {
 
 
     processOperation(operation) {
+
+        if (this.currentOperationText === "") {
+            if (this.previosOperationText !== "") {
+                this.changeOperation(operation);
+            }
+            return;
+        }
+
+
         let operationValue;
         const previous = +this.previosOperationText.innerText.split(" ")[0];
         const current = +this.currentOperationText.innerText;
@@ -67,6 +76,17 @@ class calculator {
             this.currentOperationText.innerText = "";
 
         }
+    }
+
+
+    changeOperation(operation) {
+
+        const mathOperation = ["+", "-", "*", "/"];
+
+        if (!mathOperation.includes(operation)) return;
+
+
+        this.previosOperationText.innerText = this.previosOperationText.innerText.slice(0, -1) + operation;
     }
 
 }
