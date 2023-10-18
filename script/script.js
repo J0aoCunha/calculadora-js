@@ -51,6 +51,15 @@ class calculator {
                 operationValue = previous * current;
                 this.updateScreen(operationValue, operation, current, previous);
                 break;
+            case "DEL":
+                this.processDelOperation();
+                break;
+            case "CE":
+                this.processClearCurrentOperation();
+                break;
+            case "C":
+                this.processClearAll();
+                break;
             default:
                 return;
         }
@@ -85,10 +94,25 @@ class calculator {
 
         if (!mathOperation.includes(operation)) return;
 
-
-        this.previosOperationText.innerText = this.previosOperationText.innerText.slice(0, -1) + operation;
+        this.previosOperationText.innerText =
+            this.previosOperationText.innerText.slice(0, -1) + operation;
     }
 
+
+    processClearAll() {
+        this.previosOperationText.innerText = "";
+        this.currentOperationText.innerText = "";
+    }
+
+
+    processClearCurrentOperation() {
+        this.currentOperationText.innerText = "";
+    }
+
+    processDelOperation() {
+        this.currentOperationText.innerText =
+            this.currentOperationText.innerText.slice(0, -1);
+    }
 }
 
 const calc = new calculator(previosOperationText, currentOperationText);
