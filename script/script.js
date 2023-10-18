@@ -1,27 +1,54 @@
-const previosOperation = document.querySelector("#previos-operation");
-const currentOpretion = document.querySelector("#current-operation");
+const previosOperationText = document.querySelector("#previos-operation");
+const currentOperationText = document.querySelector("#current-operation");
 const buttons = document.querySelectorAll("#buttons-container button");
 
 console.log(buttons);
 
 class calculator {
 
-    constructor(previosOperation, currentOpretionText) {
-        this.previosOperation = previosOperation;
-        this.currentOpretionText = currentOpretionText;
-        this.previosOperation = "";
+    constructor(previosOperationText, currentOperationText) {
+        this.previosOperationText = previosOperationText;
+        this.currentOperationText = currentOperationText;
+        this.currentOperation = "";
     }
 
     addDigits(digit) {
 
-        if (digit === "." && this.currentOpretion.includes(".")) return;
+        if (digit === "." && this.currentOperation.includes(".")) return;
 
-        this.currentOpretion = digit;
+        this.currentOperation = digit;
         this.updateScreen();
     }
+
+
+    processOperation(operation) {
+        let operationValue;
+        const previous = +this.previosOperationText.innerText;
+        const current = +this.currentOperationText.innerText;
+
+
+        switch (operation) {
+            case "+":
+                break;
+            default:
+                return;
+
+        }
+    }
+
+
+    updateScreen(
+        operationValue = null,
+        operation = null,
+        current = null,
+        previous = null
+    ) {
+        this.currentOperationText.innerText += this.currentOperation;
+    }
+
 }
 
-const calc = new calculator(previosOperation, currentOpretion);
+const calc = new calculator(previosOperationText, currentOperationText);
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
