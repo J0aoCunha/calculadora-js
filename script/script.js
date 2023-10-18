@@ -2,8 +2,6 @@ const previosOperationText = document.querySelector("#previos-operation");
 const currentOperationText = document.querySelector("#current-operation");
 const buttons = document.querySelectorAll("#buttons-container button");
 
-console.log(buttons);
-
 class calculator {
 
     constructor(previosOperationText, currentOperationText) {
@@ -23,16 +21,29 @@ class calculator {
 
     processOperation(operation) {
         let operationValue;
-        const previous = +this.previosOperationText.innerText;
+        const previous = +this.previosOperationText.innerText.split(" ")[0];
         const current = +this.currentOperationText.innerText;
 
 
         switch (operation) {
             case "+":
+                operationValue = previous + current;
+                this.updateScreen(operationValue, operation, current, previous);
+                break;
+            case "-":
+                operationValue = previous - current;
+                this.updateScreen(operationValue, operation, current, previous);
+                break;
+            case "/":
+                operationValue = previous / current;
+                this.updateScreen(operationValue, operation, current, previous);
+                break;
+            case "*":
+                operationValue = previous * current;
+                this.updateScreen(operationValue, operation, current, previous);
                 break;
             default:
                 return;
-
         }
     }
 
@@ -43,7 +54,19 @@ class calculator {
         current = null,
         previous = null
     ) {
-        this.currentOperationText.innerText += this.currentOperation;
+
+
+        if (operationValue === null) {
+            this.currentOperationText.innerText += this.currentOperation;
+        } else {
+            if (previous === 0) {
+                operationValue = current;
+            }
+
+            this.previosOperationText.innerText = `${operationValue} ${operation}`
+            this.currentOperationText.innerText = "";
+
+        }
     }
 
 }
@@ -57,7 +80,7 @@ buttons.forEach((btn) => {
         if (+value >= 0 || value === ".") {
             calc.addDigits(value);
         } else {
-            console.log("op =" + value);
+            calc.processOperation(value);
         }
     });
 })
