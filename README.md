@@ -28,27 +28,18 @@ Este é um projeto de calculadora simples desenvolvido durante o Curso Básico d
 3. O resultado (neste caso, 5 + 3 = 8) será exibido.
 4. Você pode optar por continuar fazendo outras operações ou sair.
 
-## Observações
-
-- Certifique-se de inserir números válidos ao realizar as operações.
-- Caso insira valores inválidos ou realize operações não suportadas, o programa apresentará mensagens de erro.
-
 ## Créditos
 
 Este projeto é baseado em um exemplo simples de calculadora em JavaScript e foi criado para fins de aprendizado e demonstração.
 
-## Contribuições
-
-Contribuições são bem-vindas! Se você deseja melhorar ou adicionar recursos a esta calculadora, fique à vontade para fazer um fork deste repositório e enviar um pull request.
-
-## Licença
-
-Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
-
 ---
-
-Espero que este README seja útil para o seu projeto. Lembre-se de adaptá-lo de acordo com as necessidades específicas do seu projeto, incluindo detalhes adicionais, como instalação e requisitos, se necessário.
 
 # Certificado
 
 ![certificado](https://hermes.digitalinnovation.one/certificates/cover/6776C362.jpg)
+
+---
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
