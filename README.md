@@ -1,6 +1,7 @@
 # Calculadora JavaScript
 
-Este é um projeto de calculadora simples desenvolvido durante o Curso Básico de JavaScript da DIO (Digital Innovation One). Esta calculadora permite realizar operações de soma, subtração, multiplicação, divisão, eu resolvi implementar um interface na calculadora para que ela realmente fique funcional.
+Este é um projeto de calculadora simples desenvolvido durante o Curso Básico de JavaScript da DIO (Digital Innovation One), atras do BOTCAMP oferecido pelo 
+Santander. Esta calculadora permite realizar operações de soma, subtração, multiplicação e divisão. Eu resolvi implementar um interface na calculadora para que ela realmente fique funcional.
 
 ## Funcionalidades
 
@@ -37,9 +38,3 @@ Este projeto é baseado em um exemplo simples de calculadora em JavaScript e foi
 ## Certificado
 
 ![certificado](https://hermes.digitalinnovation.one/certificates/cover/6776C362.jpg)
-
----
-
-## Licença
-
-Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
