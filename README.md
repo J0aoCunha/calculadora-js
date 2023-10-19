@@ -34,7 +34,7 @@ Este projeto é baseado em um exemplo simples de calculadora em JavaScript e foi
 
 ---
 
-# Certificado
+## Certificado
 
 ![certificado](https://hermes.digitalinnovation.one/certificates/cover/6776C362.jpg)
 
