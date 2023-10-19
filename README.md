@@ -1,5 +1,6 @@
-# Calculadora criada em JavaScript no curso da [DIO](https://web.dio.me/) pelo BOOTCAMP SANTANDER!
-Este é um projeto de calculadora simples desenvolvido durante o Curso Básico de JavaScript da DIO (Digital Innovation One). Esta calculadora permite realizar operações de soma, subtração, multiplicação, divisão real, divisão inteira e potenciação.
+# Calculadora JavaScript
+
+Este é um projeto de calculadora simples desenvolvido durante o Curso Básico de JavaScript da DIO (Digital Innovation One). Esta calculadora permite realizar operações de soma, subtração, multiplicação, divisão, eu resolvi implementar um interface na calculadora para que ela realmente fique funcional.
 
 ## Funcionalidades
 
@@ -7,16 +8,18 @@ Este é um projeto de calculadora simples desenvolvido durante o Curso Básico d
 - **Subtração (-):** Subtrai o segundo número do primeiro.
 - **Multiplicação (*):** Multiplica dois números.
 - **Divisão Real (/):** Divide o primeiro número pelo segundo.
-- **Divisão Inteira (%):** Calcula o resto da divisão entre o primeiro e o segundo número.
-- **Potenciação (**):** Eleva o primeiro número à potência do segundo número.
 
 ## Como usar
 
-1. Execute o código em um ambiente JavaScript, como um navegador web.
-2. A calculadora solicitará que você escolha uma operação digitando um número de 1 a 6.
-3. Em seguida, insira os dois valores nos quais deseja realizar a operação.
-4. O resultado da operação será exibido em um alerta.
-5. Você pode optar por fazer outra operação ou sair.
+1. Use os botões na interface da calculadora para realizar operações matemáticas.
+
+2. Siga as instruções a seguir para usar a calculadora:
+   - Botões de números (0 a 9) e ponto decimal (.) podem ser usados para inserir dígitos.
+   - Os botões de operação (+, -, *, /) realizam as operações matemáticas.
+   - O botão "DEL" apaga o último caractere da entrada.
+   - O botão "CE" limpa a entrada atual.
+   - O botão "C" limpa todas as entradas.
+   - O botão "=" calcula o resultado da operação.
 
 ## Exemplo de Uso
 
@@ -30,6 +33,22 @@ Este é um projeto de calculadora simples desenvolvido durante o Curso Básico d
 - Certifique-se de inserir números válidos ao realizar as operações.
 - Caso insira valores inválidos ou realize operações não suportadas, o programa apresentará mensagens de erro.
 
+## Créditos
+
+Este projeto é baseado em um exemplo simples de calculadora em JavaScript e foi criado para fins de aprendizado e demonstração.
+
+## Contribuições
+
+Contribuições são bem-vindas! Se você deseja melhorar ou adicionar recursos a esta calculadora, fique à vontade para fazer um fork deste repositório e enviar um pull request.
+
+## Licença
+
+Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
+
+---
+
+Espero que este README seja útil para o seu projeto. Lembre-se de adaptá-lo de acordo com as necessidades específicas do seu projeto, incluindo detalhes adicionais, como instalação e requisitos, se necessário.
 
 # Certificado
+
 ![certificado](https://hermes.digitalinnovation.one/certificates/cover/6776C362.jpg)
