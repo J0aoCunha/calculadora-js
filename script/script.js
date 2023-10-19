@@ -21,7 +21,7 @@ class calculator {
 
     processOperation(operation) {
 
-        if (this.currentOperationText === "") {
+        if (this.currentOperationText === "" && operation !== "C") {
             if (this.previosOperationText !== "") {
                 this.changeOperation(operation);
             }
@@ -60,6 +60,9 @@ class calculator {
             case "C":
                 this.processClearAll();
                 break;
+            case "=":
+                this.processEqualsOperation();
+                break;
             default:
                 return;
         }
@@ -92,7 +95,9 @@ class calculator {
 
         const mathOperation = ["+", "-", "*", "/"];
 
-        if (!mathOperation.includes(operation)) return;
+        if (!mathOperation.includes(operation)) {
+            return;
+        }
 
         this.previosOperationText.innerText =
             this.previosOperationText.innerText.slice(0, -1) + operation;
@@ -113,6 +118,15 @@ class calculator {
         this.currentOperationText.innerText =
             this.currentOperationText.innerText.slice(0, -1);
     }
+
+
+    processEqualsOperation() {
+        const operation = this.previosOperationText.innerText.split(" ")[1];
+
+        this.processOperation(operation);
+    }
+
+
 }
 
 const calc = new calculator(previosOperationText, currentOperationText);
