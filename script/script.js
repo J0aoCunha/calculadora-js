@@ -21,7 +21,7 @@ class calculator {
 
     processOperation(operation) {
 
-        if (this.currentOperationText === "" && operation !== "C") {
+        if (this.currentOperationText.innerText === "" && operation !== "C") {
             if (this.previosOperationText !== "") {
                 this.changeOperation(operation);
             }
